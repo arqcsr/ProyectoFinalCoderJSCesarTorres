@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Aristaviva, Empresa, Construccion, Diseño, Proyectos, Renovaciones, Remodelaciones, Ampliaciones, Instalaciones, Casas, Llave en Mano, Sistema Tradicional, Steel Framing, Bloques, Hormigon Celular, Obra Gris, Plateas, Techos, Paredes, Instalaciones, Habitaciones, Cocina, Baño, Living, Quincho, Pisos, Neuquen, Plottier, Cipolletti, Patagonia">
+    <meta name="description" content="Pedí tu presupuesto sin salir de casa, de manera fácil y online. Estamos a tu disposición para atenderte de la mejor manera"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8456f53c0a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/style.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Solicitá tu presupuesto</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar__contenedor--general">
+            <div class="container-fluid navHeaderAv">
+                <div class="logoAv">
+                    <a href="../index.html"><img src="../images/LOGO ARISTAVIVA BLANCO.png" alt="Logo" class="logoAvHeader"></a>
+                    <a href="../index.html"><h1>ARISTAVIVA Grupo Constructor</h1></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 listaNavHeader">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="proyectos.html">CASAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="obras.html">OBRAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="presupuestos.html">PRESUPUESTOS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="imagen--presu">
+            <img src="../images/presupuestos.jpg" alt="presupuestos">
+        </div>
+        <section class="seccion--presu">
+            <h2 class="seccion--presu--titulo">SOLICITÁ TU PRESUPUESTO</h2>
+            <p class="seccion--presu--parrafo">Pedí tu presupuesto sin salir de casa, de manera fácil y online. Estamos a tu disposición para atenderte de la mejor manera</p>
+            <div class="formularioPresupuestos">
+                <form action="" class="formPresupuestos" id="formulariPresupuesto">
+                    <label for="nombrep">Nombre</label>
+                    <input type="text" name="nombrep" id="nombrep" placeholder="Escribí tu nombre aquí" required>
+                    <label for="apellidop">Apellido</label>
+                    <input type="text" name="apellidop" id="apellidop" placeholder="Escribí tu apellido aquí" required>
+                    <label for="emailp">Correo electónico</label>
+                    <input type="email" name="emailp" id="emailp" placeholder="Escribí aquí tu email" required>
+                    <label for="telefonop">Teléfono</label>
+                    <input type="tel" name="telefonop" id="telefonop" placeholder="Escribí aquí tu teléfono" required>
+                    <label for="ubicacionp">¿Dónde querés construir?</label>
+                    <select name="ubicacionp" id="ubicacionp">
+                        <option disabled selected>Seleccioná una opcion</option>
+                        <option value="Neuquen">Neuquén</option>
+                        <option value="Cipolleti">Cipolleti</option>
+                        <option value="Plottier">Plottier</option>
+                        <option value="Fuera de Neuquen">Otro lugar</option>
+                    </select>
+                    <label for="terrenop">¿Tenés terreno?</label>
+                    <div>Sí</div>
+                    <input type="radio" name="terreno" value="Sí">
+                    <div>No</div>
+                    <input type="radio" name="terreno" value="No">
+                    <label for="terrenop">¿Tenés proyecto?</label>
+                    <div>Sí</div>
+                    <input type="radio" name="tenesproyecto" value="si">
+                    <div>No</div>
+                    <input type="radio" name="tenesproyecto" value="no">
+                    <label for="modeloCasa" class="form-label">Modelo de casa que desea presupuestar</label>
+                    <select name="modeloCasa" id="modeloCasa" class="form-select form-select-sm" required>
+                        <option disabled selected>Seleciona tu modelo de casa</option>
+                        <option value="Coromoto">Coromoto</option>
+                        <option value="Chocon">Chocon</option>
+                        <option value="Pellegrini">Pellegrini</option>
+                        <option value="Pico Bolivar">Pico Bolívar</option>
+                        <option value="Los Roques">Los Roques</option>
+                        <option value="Patagonia">Patagonia</option>
+                        <option value="Pirineos">Pirineos</option>
+                        <option value="Humboldt +">Humboldt +</option>
+                        <option value="Roraima">Roraima</option>
+                    </select>
+                    <label for="sistemaConst" class="form-label">Sistema Constructivo</label>
+                    <select name="sistemaConst" id="sistemaConst" class="form-select form-select-sm" required> 
+                        <option disabled selected>Selecioná el sistema constructivo con el que deseas construir</option>
+                        <option value="Sistema Tradicional">Sistema Tradicional</option>
+                        <option value="Bloques HCCA de hormigon celular">Bloques HCCA de hormigon celular</option>
+                        <option value="Steel Framing">Steel Framing</option>
+                    </select>
+                    <label for="superficie" class="form-label">Superficie aproximada que desea construir</label>
+                    <input type="number" class="form-control" id="superficie" name="superficie" required>
+                    <br><!-- espacio para poder ver en el esquema -->
+                    <label for="mensajep">Mensaje</label>
+                    <textarea name="mensajep" id="mensajep" cols="30" rows="10" placeholder="Escribínos tu mensaje (opcional)"></textarea>
+                    <input type="submit" value="Enviar Información" class="botonSubmit">
+                    <button type="button" id="botonMostrarP" class="botonMostrarP"><strong> Haz click de nuevo para ver tu prepupuesto</strong></button>
+                </form>
+            </div>
+            <div class="seccionPresupuestoSolicitado">
+                <button type="button" id="imprimirPresupuesto">Imprimí tu presupuesto</button>
+                <p class="notaBoton">Ayudemos al planeta. Imprimí en PDF no uses papel</p>
+                <button type="button" id="nuevoPresupuesto"><a href="presupuestos.html">Pedir nuevo presupuesto</a></button>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="container-fluid footer__contenedor--general">
+        <div class="row justify-content-evenly divFooter">
+            <section class="menuFooter col-12 col-sm-6 col-md-2">
+                <h3>Menú</h3>
+                <hr>
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="servicios.html">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="proyectos.html">Casas</a>
+                    </li>
+                    <li>
+                        <a href="obras.html">Obras</a>
+                    </li>
+                    <li>
+                        <a href="presupuestos.html">Presupuestos</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="rrssFooter col-12 col-sm-6 col-md-2">
+                <h3>Redes Sociales</h3>
+                <hr>
+                <div>
+                    <ul>
+                        <li>
+                            <i class="fab fa-facebook-square"></i>
+                            <a href="https://www.instagram.com/grupoaristaviva/" target="blank">Instagram</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-instagram-square"></i>
+                            <a href="https://www.facebook.com/GrupoAristaViva/" target="blank">Facebook</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp-square"></i>
+                            <a href=https://api.whatsapp.com/send/?phone=%2B5491168936970&text=Hola%2C+Quiero+contactarme+con+un+asesor+de+ventas.&app_absent=0 target="blank">Whatsapp</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="contactoFooter col-12 col-sm-6 col-md-2">
+                <h3>Contactános</h3>
+                <hr>
+                <div>
+                    <ul>
+                        <li>
+                            <p>Teléfono: +54 299 459 6175</p>
+                        </li>
+                        <li>
+                            <p>Email: ventas@aristaviva.com.ar</p>
+                        </li>
+                        <li>
+                            <p>Dirección: Rivadavia 153, Piso 7, Ofic. A. Neuquen, Capital. Argentina</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <form action="" class="formContactoFooter col-12 col-sm-6 col-md-2">
+                <h3>Escribínos</h3>
+                <hr>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Dejános tu email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Escribí tu comentario</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-light btn-lg">Enviar</button>
+            </form>
+        </div>
+    </footer>
+
+    <!-- mi script -->
+    <script src="../scripts/script.js"></script>
+    <!-- scripts de bottstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+

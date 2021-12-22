@@ -1,0 +1,392 @@
+/* -----------VARIABLES------------------- */
+$color1: #0a1612;
+$color2: #1a2930;
+$color3: #c5c1c0;
+$color4: #f7ce3e;
+$fontFam1: 'Montserrat', sans-serif;
+$fontFam2: 'Raleway', sans-serif;
+
+/* -------------------------------------------------------BANNER */
+
+.bannerHome{
+    .carousel{
+        .carousel-inner{
+            transition: 1s;
+            .carousel-caption{
+                bottom: 60px;
+                right: 35%;
+                left: 35%;
+                transition: 1s;
+                h5{
+                    font-family: $fontFam1;
+                    font-size: 3.5rem;
+                    font-weight: 700;
+                    transition: 1s;
+                }
+                p{
+                    font-family: $fontFam2;
+                    font-size: 2rem;
+                    transition: 1s;
+                }
+            }
+        }
+    }
+}
+/* animación banner */
+    .bannerHome{
+        .carousel{
+            .carousel-inner:hover{
+                transform: scale(1.01,1.01);
+                .carousel-caption:hover{
+                    background-color: $color4;
+                    opacity: 0.8;
+                    border-radius: 10px;
+                    h5{
+                        color: $color2;
+                    }
+                    p{
+                        color: $color2;
+                    }
+                }
+            }
+        }
+    }
+
+/* -------------------------------------------SERVICIOS */
+.seccion__serviciosHome{
+    padding-left: 30px;
+    padding-right: 30px;
+    .seccion__serviciosHome--titulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        padding: 40px;
+        background-color: $color2;
+        border-radius: 10px;
+        gap: 10px;
+        a{
+            text-decoration: none;
+            h2{
+                font-family: $fontFam1;
+                font-size: 3.5rem;
+                font-weight: 700;
+                color: white;
+            }
+        }
+        p{
+            font-family: $fontFam2;
+            font-size: 2rem;
+            color:white;
+        }
+    }
+    .container-fluid{
+        .row{
+            div{
+                .seccion__serviciosHome--elemento{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 20px;
+                    padding: 20px;
+                    gap: 5px;
+                    border-radius: 20px;
+                    transition: 1s;
+                    hr{
+                        width: 90%;
+                        border-style: solid;
+                        border-width: 1px;
+                        border-color: $color4;
+                        opacity: 11;
+                    }
+                    .seccion__serviciosHome__elemento--icono{
+                        font-size: 3.5rem;
+                        margin-bottom: 15px;
+                    }
+                    h2{
+                        font-family: $fontFam1;
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                    }
+                    p{
+                        font-family: $fontFam2;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.seccion__serviciosHome{
+    .container-fluid{
+        .row{
+            div{
+                .seccion__serviciosHome--elemento:hover{
+                    transform: scale(1.03,1.03)
+                }
+            }
+        }
+    }
+}
+/* -------------------------------------------MODELOS DE CASAS */
+.seccion__modelosHome{
+    padding-left: 30px;
+    padding-right: 30px;
+    .seccion__modelosHome--titulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        padding: 40px;
+        background-color: $color2;
+        border-radius: 10px;
+        gap: 10px;
+        a{
+            text-decoration: none;
+            h2{
+                font-family: $fontFam1;
+                font-size: 3.5rem;
+                font-weight: 700;
+                color: white;
+            }
+        }
+        p{
+            font-family: $fontFam2;
+            font-size: 2rem;
+            color:white;
+            a{
+                text-decoration: none;
+                font-family: $fontFam2;
+                font-size: 2rem;
+                color:white;
+                
+            }
+        }
+    }
+}
+/* grilla */
+.seccion__modelosHome--grilla{
+    display: grid;
+    grid-template-areas: 
+        "chocon pico pico"
+        "chocon pele montor";
+    grid-template-columns: auto 250px 250px;
+    grid-template-rows: 250px 250px ;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    width: 100%;
+    justify-content: baseline;
+}
+
+.seccion__modelosHome__grilla--elemento1{
+    grid-area: chocon;
+    background-image: url(../images/chocon.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    transition: 1s;
+    a{
+        text-decoration: none;
+        h5{
+            position: relative;
+            color: $color1;
+            display: inline-block;
+            top: 80%;
+            left: 50%;
+            background-color: white;
+            padding: 10%;
+            opacity: 0.8;
+            justify-self: center;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            border-radius: 5px;
+        }
+    }
+}
+.seccion__modelosHome__grilla--elemento2{
+    grid-area: pico;
+    background-image: url(../images/pico.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    transition: 1s;
+    a{
+        text-decoration: none;
+        h5{
+            position: relative;
+            color: $color1;
+            display: inline-block;
+            top: 80%;
+            left: 50%;
+            background-color: white;
+            padding: 10%;
+            opacity: 0.8;
+            justify-self: center;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            border-radius: 5px;
+        }
+    }
+}
+.seccion__modelosHome__grilla--elemento3{
+    grid-area: pele;
+    background-image: url(../images/pellegrini.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    transition: 1s;
+    a{
+        text-decoration: none;
+        h5{
+            position: relative;
+            color: $color1;
+            display: inline-block;
+            top: 80%;
+            left: 50%;
+            background-color: white;
+            padding: 10%;
+            opacity: 0.8;
+            justify-self: center;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            border-radius: 5px;
+        }
+    }
+}
+.seccion__modelosHome__grilla--elemento4{
+    grid-area: montor;
+    background-image: url(../images/roraima.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    transition: 1s;
+    z-index: 5;
+    a{
+        text-decoration: none;
+        h5{
+            position: relative;
+            color: $color1;
+            display: inline-block;
+            top: 80%;
+            left: 50%;
+            background-color: white;
+            padding: 10%;
+            opacity: 0.8;
+            justify-self: center;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            border-radius: 5px;
+        }
+    }
+}
+
+.seccion__modelosHome__grilla--elemento1:hover{
+transform: scale(1.03,1.03);
+}
+.seccion__modelosHome__grilla--elemento2:hover{
+transform: scale(1.03,1.03);
+}
+.seccion__modelosHome__grilla--elemento3:hover{
+transform: scale(1.03,1.03);
+}
+.seccion__modelosHome__grilla--elemento4:hover{
+transform: scale(1.03,1.03);
+}
+/* -------------------------------------------OBRAS */
+.seccion__obrasHome{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 60px;
+    .seccion__obrasHome--titulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        padding: 40px;
+        background-color: $color3;
+        border-radius: 10px;
+        gap: 10px;
+        a{
+            text-decoration: none;
+            h2{
+                font-family: $fontFam1;
+                font-size: 3.5rem;
+                font-weight: 700;
+                color:$color2;
+            }
+        }
+        p{
+            font-family: $fontFam2;
+            font-size: 2rem;
+            color:$color2;
+        }
+    }
+    div{
+        a{
+            img{
+                width: 100%;
+                border-radius: 10px;
+                }
+        }
+    }
+}
+
+
+/* -------------------------------------------MEDIA QUERYS */
+
+@media only screen and (max-width: 768px){
+    .seccion__modelosHome--grilla{
+        display: grid;
+        grid-template-areas: 
+            "chocon chocon"
+            "pico pico"
+            "pele montor";
+        grid-template-columns:  auto auto;
+        grid-template-rows: 250px 250px 250px;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .seccion__modelosHome--grilla{
+        display: grid;
+        grid-template-areas: 
+            "chocon"
+            "pico"
+            "pele"
+            "montor";
+        grid-template-columns:  auto;
+        grid-template-rows: 300px 300px 300px 300px;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+}
+@media only screen and (max-width: 720px){
+    .seccion__serviciosHome{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .seccion__modelosHome{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .seccion__obrasHome{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .w-100{
+        width: 100vw;
+        height: 45vh;
+        object-fit: cover;
+    }
+}
+
+

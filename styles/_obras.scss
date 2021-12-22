@@ -1,0 +1,133 @@
+/* -----------VARIABLES------------------- */
+$color1: #0a1612;
+$color2: #1a2930;
+$color3: #c5c1c0;
+$color4: #f7ce3e;
+$fontFam1: 'Montserrat', sans-serif;
+$fontFam2: 'Raleway', sans-serif;
+
+/* -------------------------------------------------------PROYECTOS */
+.imagen--obras{
+    img{
+        width: 100%;
+    }
+}
+.seccion--obrasObras{
+    padding-left: 30px;
+    padding-right: 30px;
+    .seccion--obrasObras--titulo{
+        font-family: $fontFam1;
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+        padding: 40px;
+        background-color: $color2;
+        border-radius: 10px;
+        gap: 10px;
+    }
+    .seccion--obrasObras--parrafo{
+        font-family: $fontFam2;
+        font-size: 2rem;
+        color:$color1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        background-color: white;
+    }
+    .seccion--obrasObras--contenedor1{
+        margin-bottom: 40px;
+        .seccion--obrasObras--row1{
+            .seccion--obrasObras--row1--img{
+                padding-right: 20px;
+                padding-bottom: 20px;
+                img{
+                    width: 100%;
+                    border-radius: 20px;
+                }
+            }
+            .seccion--obrasObras--row1--texto{
+                background-color: $color2;
+                border-radius: 20px;
+                padding: 20px;
+                margin-bottom: 20px;
+                h4{
+                    font-family: $fontFam1;
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    color: white;
+                }
+                hr{
+                    width: 100%;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-color: $color4;
+                    opacity: 1;
+                }
+                p{
+                    font-family: $fontFam2;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    color: white;
+                    span{
+                        font-weight: 700;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    color: $color2;
+                }
+            }
+            .seccion--obrasObras--row2--texto{
+                background-color: $color3;
+                border-radius: 20px;
+                padding: 20px;
+                margin-bottom: 20px;
+                h4{
+                    font-family: $fontFam1;
+                    font-size: 2.5rem;
+                    font-weight: 900;
+                }
+                hr{
+                    width: 100%;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-color: $color4;
+                    opacity: 1;
+                }
+                p{
+                    font-family: $fontFam2;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    span{
+                        font-weight: 900;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    color: $color2;
+                }
+            }
+        }
+    }
+}
+
+/* -------------------------------------------MEDIA QUERYS */
+
+@media only screen and (max-width: 720px){
+    .imagen--obras{
+        img{
+            width: 100vw;
+            height: 60vh;
+            object-fit: cover;
+        }
+    }
+    .seccion--obrasObras{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}

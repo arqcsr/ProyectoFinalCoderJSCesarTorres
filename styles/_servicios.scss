@@ -1,0 +1,162 @@
+/* -----------VARIABLES------------------- */
+$color1: #0a1612;
+$color2: #1a2930;
+$color3: #c5c1c0;
+$color4: #f7ce3e;
+$fontFam1: 'Montserrat', sans-serif;
+$fontFam2: 'Raleway', sans-serif;
+
+/* -------------------------------------------------------SERVICIOS */
+.imagen--servicios{
+    img{
+        width: 100%;
+    }
+}
+
+.seccion__serviciosServicios{
+    padding-left: 30px;
+    padding-right: 30px;
+    .seccion__serviciosServicios--titulo{
+        font-family: $fontFam1;
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+        padding: 40px;
+        background-color: $color2;
+        border-radius: 10px;
+        gap: 10px;
+    }
+    .seccion__serviciosServicios--parrafo{
+        font-family: $fontFam2;
+        font-size: 2rem;
+        color:$color1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        background-color: white;
+    }
+    .seccion__serviciosServicios--elemento{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        padding: 20px;
+        gap: 5px;
+        border-radius: 20px;
+        transition: 1s;
+        img{
+            width: 100%;
+        }
+        hr{
+            width: 90%;
+            border-style: solid;
+            border-width: 1px;
+            border-color: $color4;
+            opacity: 1;
+        }
+        h2{
+            font-family: $fontFam1;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+        p{
+            font-family: $fontFam2;
+            font-size: 1.5rem;
+        }
+    }
+    .llaveEnMano{
+        margin: 30px;
+        margin-bottom: 60px;
+        padding: 40px;
+        background-color: $color3;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 50px;
+        width: auto;
+        .llaveEnMano--imagen{
+            img{
+                border-radius: 10px;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        .llaveEnMano--texto{
+            width: 650px;
+            h4{
+                font-family: $fontFam1;
+                font-size: 3.5rem;
+                font-weight: 700;
+            }
+            hr{
+                width: 90%;
+                border-style: solid;
+                border-width: 1px;
+                border-color: $color4;
+                opacity: 1;
+            }
+            p{
+                font-family: $fontFam2;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.seccion__serviciosServicios{
+    .seccion__serviciosServicios--elemento:hover{
+        transform: scale(1.03,1.03);
+    }
+}
+
+.seccion__preciosServicios{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: $fontFam1;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color:$color2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 40px;
+    background-color: $color4;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+/* -------------------------------------------MEDIA QUERYS */
+
+@media only screen and (max-width: 720px){
+    .imagen--servicios{
+        img{
+            width: 100vw;
+            height: 60vh;
+            object-fit: cover;
+        }
+    }
+    .seccion__serviciosServicios{
+        padding-left: 5px;
+        padding-right: 5px;
+        .llaveEnMano{
+            flex-wrap: wrap;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+    }
+    .seccion__preciosServicios{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}

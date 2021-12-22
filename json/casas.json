@@ -1,0 +1,66 @@
+[
+    {
+        "nombre":"Coromoto",
+        "area":97,
+        "habitaciones":2,
+        "niveles":2,
+        "imagen":"../images/modelos de casas/coromoto.jpg"
+    },
+    {
+        "nombre":"Chocon",
+        "area":87,
+        "habitaciones":2,
+        "niveles":2,
+        "imagen":"../images/modelos de casas/chocon.jpg"
+    },
+    {
+        "nombre":"Pellegrini",
+        "area":50,
+        "habitaciones":1,
+        "niveles":1,
+        "imagen":"../images/modelos de casas/pellegrini.jpg"
+    },
+    {
+        "nombre":"Pico Bolivar",
+        "area":123,
+        "habitaciones":2,
+        "niveles":2,
+        "imagen":"../images/modelos de casas/pico.jpg"
+    },
+    {
+        "nombre":"Los Roques",
+        "area":65,
+        "habitaciones":2,
+        "niveles":1,
+        "imagen":"../images/modelos de casas/los roques.jpg"
+    },
+    {
+        "nombre":"Patagonia",
+        "area":43,
+        "habitaciones":1,
+        "niveles":1,
+        "imagen":"../images/modelos de casas/patagonia.jpg"
+    },
+    {
+        "nombre":"Pirineos",
+        "area":80,
+        "habitaciones":2,
+        "niveles":2,
+        "imagen":"../images/modelos de casas/pirineos.jpg"
+    },
+    {
+        "nombre":"Humboldt +",
+        "area":94,
+        "habitaciones":3,
+        "niveles":1,
+        "imagen":"../images/modelos de casas/humbolt.jpg"
+    },
+    {
+        "nombre":"Roraima",
+        "area":120,
+        "habitaciones":2,
+        "niveles":2,
+        "imagen":"../images/modelos de casas/roraima.jpg"
+    }
+
+]
